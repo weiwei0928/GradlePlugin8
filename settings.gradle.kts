@@ -8,7 +8,7 @@ pluginManagement {
             }
         }
         maven(url = "https://jitpack.io")
-        maven(url = uri("./repo"))
+//        maven(url = uri("./repo"))
         mavenCentral()
         gradlePluginPortal()
     }
@@ -17,13 +17,13 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         maven(url = "https://jitpack.io")
-        maven(url = uri("./repo"))
+//        maven(url = uri("./repo"))
         google()
         mavenCentral()
     }
 }
 
-rootProject.name = "GradlePlugin8"
+rootProject.name = "GradlePlugin"
 include(":app")
 include(":hookLib")
 includeBuild("gradle-plugin-lib")
